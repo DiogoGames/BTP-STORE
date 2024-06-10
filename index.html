@@ -1,0 +1,489 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta property="og:type" content="website">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Home - Brasil Mundo Real MTA:SA">
+  <meta property="og:site_name" content="Brasil Mundo Real MTA:SA">
+  <meta property="og:description" content="Conheça o BMR, o melhor servidor de MTA da atualidade. mais de 300 players simultâneos diariamente">
+  <meta name="description" content="Conheça o BMR, o melhor servidor de MTA da atualidade. mais de 300 players simultâneos diariamente">
+  <meta name="keywords" content="brasilmundoreal, Loja brasilmundoreal, Servidor brasilmundoreal, Cidade brasilmundoreal, Central Cart">
+
+  <link rel="icon" type="image/x-icon" href="images/0e22719d-68ed-4085-bba7-dd29c19f08f6.png">
+
+  <title>Home - Brasil Mundo Real MTA:SA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.css">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+
+  <link rel="stylesheet" href="css/core.css">
+  <link rel="stylesheet" href="css/centraldraft.css">
+  <link rel="stylesheet" type="text/css" href="css/toastify.min.css">
+
+  <script src="js/jquery-3.7.1.js"></script>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'roboto': ['Roboto', 'sans-serif'],
+            'montserrat': ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            'background': "#181A28",
+            'muted': '#222436',
+            'muted-foreground': '#777B9E',
+            'muted-contrast': '#282A3F',
+            'demo-gray-850': '#181A28', 
+            'demo-purple-850': '#5011B8',
+            'brand': '#7164ff',
+            'brand-contrast': '#8d88ff',
+            'border': "#2d3044",
+          },
+          boxShadow: {
+            'center': 'rgba(0,0,0,.15) 0 4px 20px'
+          }
+        },
+      },
+    }
+  </script>
+
+  <style type="text/tailwindcss">
+    @layer base {
+      * {
+        @apply border-border;
+      }
+
+      input, select {
+        @apply bg-background border rounded font-medium text-white px-2 font-normal;
+      }
+
+      input:focus-visible, select:focus-visible {
+        outline: none;
+        @apply ring-2 ring-brand;
+      }
+
+      p {
+        color: white;
+      }
+
+      input[type="checkbox"] {
+        @apply accent-brand
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-background h-screen">
+  <header class="
+  w-full h-72 bg-muted inline-flex bg-center
+  bg-[url(https://cdn.centralcart.com.br/stores/3610/theme/8b44c5f4-c746-4c74-a76c-aaffbbe7a65c.png)] bg-cover bg-no-repeat object-cover
+  max-md:h-[auto] max-md:py-10 
+">
+  <div class="w-full max-w-[1216px] mx-auto flex justify-between items-center max-md:flex-col max-md:gap-6 px-3">
+    <div class="flex items-center gap-5 w-full max-w-[250px] justify-start">
+      <div class="bg-muted flex items-center justify-center rounded-md w-12 h-12 border">
+        <i class="fa-solid fa-server text-brand text-xl"></i>
+      </div>
+      
+            <button id="copy-ip" class="inline-flex flex-col items-start whitespace-nowrap" onclick="handleCopyIpToClipboard(`mtasa://51.81.105.91:22073`)">
+        <span class="font-semibold text-muted-foreground">
+          Conecte-se já!        </span>
+        <span id="copy-ip" class="text-sm font-light	text-white w-fit self-start">
+          Clique para jogar.
+        </span>
+      </button>
+    </div>
+
+    <a href="/" class="logo-anim ">
+              <img src="images/0eb7b64c-99cf-4637-adbf-742c8e73e6b2.png" class="w-52 h-52 object-contain">
+          </a>
+
+    <div class="flex items-center gap-5 w-full max-w-[250px] justify-end">
+      <a class="inline-flex flex-col text-right whitespace-nowrap" href="https://discord.gg/bmr" target="_blank">
+        <span class="font-semibold text-muted-foreground">
+          Acesse o nosso Discord
+        </span>
+        <span class="text-sm font-light	text-white w-fit self-end">
+          Clique para entrar
+        </span>
+      </a>
+      <div class="bg-muted flex items-center justify-center rounded-md w-12 h-12 border">
+        <i class="fa-brands fa-discord text-brand text-xl"></i>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="menu" class="group fixed inset-0 bg-[#222436] bg-opacity-90 backdrop-blur-sm z-[9999] h-screen overflow-y-auto hidden">
+
+  <button type="button" class="absolute top-10 right-10 max-sm:top-5 max-sm:right-5 hover:opacity-100" onclick="handleMenu(false)">
+    <i class="fa-solid fa-xmark text-2xl text-white"></i>
+  </button>
+
+  <div class="w-full max-w-[580px] mx-auto h-fit py-16">
+    <a href="/" class="flex w-full justify-center ">
+              <img src="images/0eb7b64c-99cf-4637-adbf-742c8e73e6b2.png" class="w-52 h-52 object-contain">
+          </a>
+
+    <nav class="mt-5 text-center">
+      <ul class="inline-flex flex-col items-center gap-5">
+        <li>
+          <a href="/" class="flex gap-2 items-baseline tracking-[0.05em] text-lg text-white font-semibold">
+            <i class="fa-solid fa-house text-xl text-brand"></i>
+            Ínicio
+          </a>
+        </li>
+        <li>
+          <a href="/cart" class="flex gap-2 items-baseline tracking-[0.05em] text-lg text-white font-semibold">
+            <i class="fa-regular fa-star text-xl text-brand"></i>
+            <div class="flex items-center gap-1.5">
+              Carrinho <span class="bg-brand text-sm w-5 rounded flex items-baseline justify-center cart-quantity">0</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/blog" class="flex gap-2 items-baseline tracking-[0.05em] text-lg text-white font-semibold">
+            <i class="fa-regular fa-star text-xl text-brand"></i>
+            Blog
+          </a>
+        </li>
+      </ul>
+
+      
+      <a class="flex mt-6 items-center gap-2 bg-brand hover:bg-brand/80 transition tracking-[0.05em]
+        px-[40px] rounded-md max-w-sm py-2.5 text-lg text-white font-semibold w-max mx-auto text-center cursor-pointer select-none" href="/category/beneficios-1">
+        <i class="fa-solid fa-cart-shopping text-base"></i>
+        Loja
+      </a>
+    </nav>
+  </div>
+</section>
+
+<aside class="w-full h-[90px] bg-muted inline-flex justify-center items-center max-md:justify-end max-md:p-0 gap-6">
+  <button type="button" id="menu-button" class="mr-5 opacity-50 max-md:inline-block hidden" onclick="handleMenu(true)">
+    <i class="fa-solid fa-bars text-2xl text-white"></i>
+  </button>
+
+  <div class="w-full max-w-[1216px] flex justify-between items-center max-md:hidden px-3">
+    <nav>
+      <ul class="flex gap-12">
+        <li>
+          <a href="/" class="flex gap-2 items-baseline tracking-[0.05em] text-lg text-white font-semibold">
+            <i class="fa-solid fa-house text-xl text-brand"></i>
+            Ínicio
+          </a>
+        </li>
+        <li>
+          <a href="/cart" class="flex gap-2 items-baseline tracking-[0.05em] text-lg text-white font-semibold">
+            <i class="fa-regular fa-star text-xl text-brand"></i>
+            <div class="flex items-center gap-1.5">
+              Carrinho <span class="bg-brand text-sm w-5 rounded flex items-baseline justify-center cart-quantity">0</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/blog" class="flex gap-2 items-baseline tracking-[0.05em] text-lg text-white font-semibold">
+            <i class="fa-regular fa-star text-xl text-brand"></i>
+            Blog
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <a class="flex items-center gap-2 bg-brand hover:bg-brand/80 transition tracking-[0.05em]
+      px-[40px] rounded-md max-w-sm py-2.5 text-lg text-white font-semibold w-auto cursor-pointer select-none" href="/category/beneficios-1">
+      <i class="fa-solid fa-cart-shopping text-base"></i>
+      Loja
+    </a>
+  </div>
+</aside>
+  
+<main class="mx-auto w-full max-w-[1216px] flex flex-col mt-12 gap-8 px-3">
+  
+      <div class="w-full h-64 bg-[url('https://cdn.centralcart.com.br/public/assets/templates/LUMINA/connect-fivem.png')] 
+  bg-no-repeat bg-right md:bg-[length:60%] object-cover rounded-xl">
+  <div class="
+      flex flex-col justify-center pl-14 h-full w-full 
+      rounded-xl from-50% bg-gradient-to-r from-muted to-transparent
+      max-md:w-full max-md:text-center max-md:px-5 
+  ">
+    <h2 class="text-3xl text-white font-semibold max-md:text-2xl">
+      Jogue agora <i class="fa-solid fa-gamepad text-brand"></i>
+    </h2>
+    <p class="text-lg text-white font-light mt-1 opacity-50 max-md:text-base md:w-[396px]">
+      Junte-se a outros jogadores e divirta-se no nosso servidor! Estamos te aguardando.
+    </p>
+    <button id="copy-ip" onclick="handleCopyIpToClipboard('mtasa://51.81.105.91:22073')" class="bg-brand hover:bg-brand/80 transition mt-6 text-base text-white font-semibold
+      px-[40px] py-2.5 rounded-b-2xl w-full max-w-72 max-md:mx-auto max-md:text-[14px] tracking-wide
+    ">
+      <span id="copy-ip">
+        Acesse o nosso servidor
+      </span>
+    </button>
+  </div>
+</div>  
+  <section class="flex gap-5 max-md:flex-col w-full max-w-[1216px] mx-auto">
+    <div class="w-full h-fit flex flex-col">
+              <div class="CentralDraft mb-auto"><p><strong><span style="color: rgb(0, 88, 230)">Seja bem vindo(a) a loja do Brasil Mundo real!</span></strong><br></p><p>➜ Servidor Fundado, pelo o Carlos Magno Dia 09/02/2019.</p><p>Fundado por @magnomta</p><p></p><p>Veja as perguntas frequentes:</p><p>&nbsp;</p><p><strong><span style="color: rgb(0, 88, 230)">Após a doação, em quanto tempo eu recebo o benefício?</span></strong></p><p>➥ Os produtos são enviados imediatamente após o pagamento, podendo ocorrer um intervalo de no máximo 1 dia para a ativação ocorrer no servidor. &nbsp;Após adquirir este produto por favor enviar o comprovante ao contato abaixo:<br><br><strong><em>Whatsapp:</em></strong><em> +</em>55 82 99689-2673</p><p></p><p><strong><span style="color: rgb(0, 88, 230)">É seguro doar por aqui?</span></strong></p><p>➥ Utilizamos as tecnologias mais recentes para a criação e segurança da plataforma, garantindo assim a privacidade dos seus dados. &nbsp; &nbsp;</p><p><strong><span style="color: rgb(0, 88, 230)">Como posso ver quantos dias faltam para expirar meu produto?</span></strong></p><p>➥ Basta entrar em nosso servidor e pressionar a tecla f4 que irá abrir uma aba com todos os detalhes.&nbsp;</p><p><strong><span style="color: rgb(0, 88, 230)">Quais os métodos de pagamento a loja aceita?</span></strong></p><p>➥ Aceitamos Mercado Pago, Pix e Paypal. Para ativar seu produto entre em contato com o nosso atendimento 24h no WhatsApp: 82 996892673.</p></div>
+      
+      <div class="mt-8">
+                  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                          <div class="bg-muted rounded-xl max-lg:flex-grow h-full">
+  <img src="images/a7c235f5-98f2-48e7-95f0-661243b4224c.png" class="w-full rounded-xl rounded-b-none object-cover max-h-40" alt="Post image" onerror="this.src = 'https://cdn.centralcart.com.br/public/assets/templates/LUMINA/no-image.png'">
+
+  <div class="px-3.5 flex flex-col items-start h-[calc(100%-160px)] pb-4">
+    <div class="flex justify-center items-center gap-3 mt-4">
+      <span class="text-white font-normal text-sm">
+        Postagem
+      </span>
+      <div class="w-[14px] h-[1px] bg-muted-foreground"></div>
+      <p class="px-1 text-sm bg-brand-contrast/10 text-brand-contrast rounded">06 fev. 2024</p>
+    </div>
+
+    <h3 class="text-white font-medium mt-4">
+      Seja bem-vindo ao Brasil Mundo Real - O Melhor Mundo de Roleplay no MTA!    </h3>
+
+    <p class="text-sm mt-4 text-muted-foreground">
+      Desde 09/02/2019, estamos construindo histórias, aventuras e amizades que resistem ao teste do tempo. Ao longo desses quase 5 anos online, mais de mei...    </p>
+
+    <div class="mt-auto w-full">
+      <a href="/post/06/02/2024/seja-bem-vindo-ao-brasil-mundo-real-o-melhor-mundo-de-roleplay-no-mta!" class="w-full flex justify-center items-center mt-4 bg-brand-contrast hover:bg-brand-contrast/80 transition text-white font-medium py-1 rounded">
+        Ler mais
+      </a>
+    </div>
+  </div>
+</div>                                    </div>
+  
+          <div class="bg-muted p-4 mt-4 rounded-xl flex justify-between items-center">
+            <p class="text-white">Veja mais postagens no <a href="/blog" class="text-brand hover:underline">nosso blog</a>.</p>
+
+            <a href="/blog" class="bg-brand px-4 py-2 flex items-center gap-1 text-white 
+              text-sm font-semibold rounded tracking-[0.05em] transition hover:bg-brand/80">
+              <i class="fa-solid fa-share"></i> 
+              Visitar blog
+            </a>
+          </div>
+              </div>
+    </div>
+
+    <div class="relative flex flex-col gap-7 max-w-72 max-md:max-w-full h-full w-full p-0">
+      
+<a class="h-[108px] max-md:h-[140px] flex items-end bg-brand hover:bg-brand/80 transition rounded-xl overflow-hidden cursor-pointer select-none" href="/category/beneficios-1">
+  <div class="absolute -top-3.5 right-0 w-[275px] h-[99px] 
+  bg-[url('https://cdn.centralcart.com.br/public/assets/templates/LUMINA/money.png')] 
+  bg-auto max-md:h-[150px] bg-no-repeat bg-center object-cover">
+  </div>
+
+  <div class="w-full h-[45px] bg-black bg-opacity-15 z-50 flex items-center justify-center text-white text-lg font-semibold tracking-wide backdrop-blur-lg">
+    Acesse a nossa loja
+  </div>
+</a>
+            <iframe src="https://discord.com/widget?id=613247128822611999&amp;theme=dark" allowtransparency="true" class="w-full h-full rounded-xl min-h-[500px]" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            
+                    <div class="relative bg-muted w-full max-w-[280px] max-lg:max-w-full 
+  rounded-xl bg-[url('https://cdn.centralcart.com.br/public/assets/templates/LUMINA/product-backdground.png')] 
+  bg-cover bg-no-repeat bg-center object-cover h-auto hover:ring-2 ring-brand transition">
+  <div class="flex flex-col items-center p-6 h-full gap-4 rounded-xl bg-gradient-to-b from-transparent to-brand/60">
+          <span class="absolute top-0 left-0 bg-white z-50 m-2.5 px-2 text-xs py-1 rounded text-center text-brand font-semibold">
+        EM DESTAQUE
+      </span>
+    
+    <div class="w-full flex justify-center items-center mb-auto">
+      <div class="w-full flex justify-center items-start">
+                  <img class="max-h-full mx-auto rounded" src="images/36766457-1cd2-4bc4-bc83-55cc7395afb9.png">
+              </div>
+    </div>
+
+    <h2 class="font-semibold text-[23px] text-white">VIP BASIC 40 DIAS</h2>
+    <div class="flex flex-col items-center text-white leading-8">
+      <span class="text-white text-opacity-50 text-base">
+        por
+      </span>
+      <span class="text-2xl font-semibold text-white">
+        R$&nbsp;19,99      </span>
+    </div>
+    
+    <div class="mt-5 w-full transition rounded-b-xl flex items-center justify-center text-white">
+      <button class="h-14 w-[55px] rounded-l-lg flex items-center transition
+        justify-center hover:shadow-center bg-white/30 hover:bg-white/35" onclick="showPackage(`package-94833`)">
+        <i class="fa-solid fa-circle-question text-xl text-black/60"></i>
+      </button>
+
+                        <button class="h-14 flex items-center justify-center gap-2 font-medium text-lg w-[175px] whitespace-nowrap rounded-r-lg disabled:cursor-not-allowed
+        transition hover:shadow-center bg-white/20 hover:bg-white/30" id="94833" data-func="add-to-cart" data-slug="package-94833">
+        <i class="fa-solid fa-cart-plus text-base text-white/60"></i>
+        Doar      </button>
+    </div>
+  </div>
+</div>  
+          </div>
+  </section>
+</main>
+  <div class="mx-auto w-full max-w-[1216px] flex flex-col mt-8 px-3">
+    
+          <div class="
+  w-full flex items-center h-40	max-md:py-5
+  rounded-xl max-md:flex-col max-md:h-full bg-gradient-to-b 
+  md:bg-gradient-to-r from-muted to-brand/80 from-30%
+  ">
+
+  <div class="
+    flex flex-col justify-center pl-6 h-full w-full rounded-xl
+    max-md:w-full max-md:text-center max-md:px-5 max-md:from-transparent
+    ">
+    <h2 class="text-2xl text-white font-medium max-md:text-2xl">
+      Doadores do mês
+    </h2>
+    <p class="text-base font-medium text-muted-foreground mt-1 max-md:text-base">
+      Veja quem mais contribuiu com o nosso servidor!
+    </p>
+        <button id="copy-ip" onclick="handleCopyIpToClipboard(`mtasa://51.81.105.91:22073`)" class="mt-4 text-base text-white font-medium max-w-72 backdrop-blur-sm bg-white/5 hover:bg-white/0 transition
+      py-1.5 rounded w-full max-md:mx-auto max-md:text-sm border border-brand">
+      <span id="copy-ip">
+        Acesse o servidor
+      </span>
+    </button>
+  </div>
+
+  <div class="flex justify-end gap-6 items-center w-full max-w-3xl pr-6 max-md:mt-10 max-md:p-0 max-md:justify-center">
+                  <div class="relative flex flex-col items-center gap-2 mt-[0px]">
+          <div class="
+            h-[22px] px-2 rounded-sm bg-black/40 text-brand font-semibold flex 
+            justify-center items-center text-sm border border-brand whitespace-nowrap
+            ">
+            1º - Giovane          </div>
+
+                      <div class="h-10 w-10 rounded border border-brand/50 flex justify-center items-center">
+              <img src="images/medal-1.png" width="20">
+            </div>
+          
+                </div>
+              <div class="relative flex flex-col items-center gap-2 mt-[12px]">
+          <div class="
+            h-[22px] px-2 rounded-sm bg-black/40 text-brand font-semibold flex 
+            justify-center items-center text-sm border border-brand whitespace-nowrap
+            ">
+            2º - Giovane          </div>
+
+                      <div class="h-10 w-10 rounded border border-brand/50 flex justify-center items-center">
+              <img src="images/medal-2.png" width="20">
+            </div>
+          
+                </div>
+              <div class="relative flex flex-col items-center gap-2 mt-[24px]">
+          <div class="
+            h-[22px] px-2 rounded-sm bg-black/40 text-brand font-semibold flex 
+            justify-center items-center text-sm border border-brand whitespace-nowrap
+            ">
+            3º - Brm          </div>
+
+                      <div class="h-10 w-10 rounded border border-brand/50 flex justify-center items-center">
+              <img src="images/medal-3.png" width="20">
+            </div>
+          
+                </div>
+            </div>
+</div>
+      </div>
+
+  <footer class="mx-auto w-full max-w-[1216px] flex flex-col mt-12 gap-8 px-3">
+  <div class="flex justify-between items-center gap-5 border-b pb-10 max-md:flex-col max-md:items-start">
+    <div class="flex flex-col gap-2 max-w-sm">
+      <div class="relative flex gap-2 items-center">
+                  <img src="images/0eb7b64c-99cf-4637-adbf-742c8e73e6b2.png" class="w-10" alt="Logo">
+                <h2 class="text-white font-semibold text-2xl max-md:text-xl">Brasil Mundo Real MTA:SA</h2>
+      </div>
+      <p class="text-sm text-muted-foreground max-md:mt-3 font-medium leading-6">
+        Se você acredita em nosso objetivo de proporcionar uma melhor experiência de jogo e deseja fazer parte dessa 
+        jornada conosco, considere fazer uma doação hoje. Juntos, podemos continuar construindo e fortalecendo esta comunidade incrível.
+      </p>
+    </div>
+
+    <div class="flex gap-11 max-md:mt-4">
+
+      <div class="text-sm">
+        <h2 class="text-white font-medium">Acessar</h2>
+        <ul class="flex flex-col gap-2 mt-4">
+          <li><a href="/" class="text-muted-foreground hover:underline hover:text-brand">Inicio</a></li>
+          <li><a href="/cart" class="text-muted-foreground hover:underline hover:text-brand">Carrinho</a></li>
+          <li><a href="/blog" class="text-muted-foreground hover:underline hover:text-brand">Blog</a></li>
+          <li><button class="text-muted-foreground hover:underline hover:text-brand" onclick="showTerms()">Termos</button></li>
+        </ul>
+      </div>
+
+      
+      <div class="text-sm ">
+        <h2 class="text-white font-medium">Redes Sociais</h2>
+        <ul class="flex flex-col gap-2 mt-4">
+                      <li><a href="https://discord.gg/bmr" class="text-muted-foreground hover:underline hover:text-brand">Discord</a></li>
+                    
+                      <li><a href="https://www.tiktok.com/@bmrmta" class="text-muted-foreground hover:underline hover:text-brand">TikTok</a></li>
+          
+                      <li><a href="https://www.instagram.com/brasilmundoreal/" class="text-muted-foreground hover:underline hover:text-brand">Instagram</a></li>
+          
+                      <li><a href="https://www.youtube.com/channel/UCmLjxXkweV-bK5W4_1M4r9Q" class="text-muted-foreground hover:underline hover:text-brand">YouTube</a></li>
+          
+                      <li><a href="https://www.facebook.com/brasilmundorealmta" class="text-muted-foreground hover:underline hover:text-brand">Facebook</a></li>
+          
+                  </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex items-center justify-between gap-2 pb-8 max-md:flex-col">
+    <p class="text-sm max-md:mt-5 text-muted-foreground text-center font-medium">
+      Todos os direitos reservados - Brasil Mundo Real MTA:SA © 2024    </p>
+
+    <a href="https://bmrmta.com.br" target="_blank">
+      <img src="images/rY9FO7g.png" class="w-8">
+    </a>
+  </div>
+</footer>
+
+<div id="terms-modal" class="hidden">
+  <div class="flex items-center justify-between border-b border-b-muted p-6">
+    <h1 class="font-bold text-lg text-white">Confira os termos</h1>
+
+    <button class="bg-red-500 hover:bg-red-500/80 transition rounded-full w-6 h-6 flex items-center justify-center" onclick="closeModal()">
+      <i class="fa-solid fa-xmark text-muted"></i>
+    </button>
+  </div>
+
+  <div class="border-b border-b-muted p-4 bg-background/60">
+          <div class="CentralDraft">
+        <p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TERMO DE USO E PAGAMENTO</p><p>&nbsp;</p><p>TERMOS DE PAGAMENTO E USO</p><p>&nbsp;</p><p>I -&nbsp;Ao realizar uma compra, você está afirmando que:</p><p>&nbsp;</p><p>II -&nbsp;Você tem pelo menos 18 anos ou tem permissão de seu responsável;</p><p>&nbsp;</p><p>III - Você tem autorização para usar o cartão de crédito, débito e/ou qualquer função de contas bancárias;</p><p>&nbsp;</p><p>IV - Você não cobrará, não contestará ou reverterá quaisquer pagamentos;</p><p>&nbsp;</p><p>VI - Você não vai abusar de seus dons e/ou classificações;</p><p>&nbsp;</p><p>VII - Reservamo-nos o direito de proibir qualquer conta sem aviso prévio, por qualquer motivo;</p><p>&nbsp;</p><p>VIII - Você entende que a proteção das informações de login de sua conta é da exclusiva responsabilidade</p><p>do usuário. No caso de uma conta comprometida, nenhuma compra será transferida ou reembolsada;</p><p>&nbsp;</p><p>IX - Você concorda com tudo o que está listado acima e abaixo. NENHUMA AQUISIÇÃO DE</p><p>TRANSFERÊNCIA OU DE REEMBOLSO;</p><p>&nbsp;</p><p>X - "Vida útil" é definida como vida útil do produto. Se o produto for interrompido, o BMR não se responsabiliza por continuar a fornecer os serviços e o usuário concorda que todos os serviços foram totalmente entregues e foram satisfatórios. Não há responsabilidade contínua em nome do BMR no que diz respeito ao usuário;</p><p>&nbsp;</p><p>XI - Reservamo-nos o direito de alterar, com ou sem aviso prévio, qualquer preço de item que tenha sido estabelecido. Também nos reservamos o direito de alterar o conteúdo de um item específico - os benefícios de um determinado nível podem mudar e você não terá direito aos antigos benefícios de classificação se o alterarmos. Tenha certeza de que nenhum benefício de classificação ou qualquer outro item na loja será alterado sem um motivo válido de equilíbrio de servidor;</p><p>&nbsp;</p><p>XII - Você concorda que ao adquirir quaisquer produtos fornecidos pelo BMR, que, com ou sem aviso</p><p>prévio, com instituto de declaração de massa falida, a rede pode, equiparado pelo Código</p><p>&nbsp;</p><p>XIII -Empresarial, desligar a rede por completa ou parcialmente, com intuito de cobrir dados e prejuízos as que lhe convêm. Produtos adquiridos em tempo de paz, entregues e usufruídas pelos usuários serão de cunho a venda a coisa esperada, instituto equiparado pelo Código Civil, Livro III, dos Contratos;</p><p>&nbsp;</p><p>XIV - Você concorda em indenizar a equipe, os proprietários, os anfitriões, os anunciantes, os diretores, os funcionários, os parceiros e todas as outras partes relacionadas a essa equipe de servidores. Ao concordar com estes termos, você concorda em não apresentar qualquer ação judicial ou outro desafio legal contra a equipe do servidor por qualquer motivo, relacionado ou não à sua compra;</p><p>&nbsp;</p><p>XV - Qualquer equipe, proprietários, hosts, anunciantes, diretores, funcionários, parceiros e todas as outras partes relacionadas a esta equipe de servidores reservam o direito, com as permissões apropriadas, de obrigá-lo a deixar o servidor permanentemente ou temporariamente com Nenhuma chance de reembolso - no entanto isso nunca será injustificado, isso só acontecerá no caso de extrema quebra de regras. Se você obedecer as regras, você nunca será banido, simples e simples;</p><p>&nbsp;</p><p>XVI -Todos os termos e condições estão em vigor indefinidamente assim que o contrato é aceito e permanecerá ativo mesmo depois de sair, são banidos, removidos ou se você deixar o servidor de qualquer forma. Política de Reembolso: Todas as vendas são finais, você não pode recomprar, parar, creditar o servidor por qualquer meio necessário para receber seus fundos de volta que do que foram pagos. E, ao fazê-lo, nos reservamos o direito de não permitir que você continue jogando no servidor&nbsp;e não permitir que outros fundos sejam adicionados ou retirados. Reservamo-nos o direito de prosseguir qualquer ação legal ou de cobrança necessária para recuperar danos em caso de uma cobrança forçada;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>XVII - Pagamentos para o servidor BMR é um pagamento para os itens virtuais contidos na compra. Esta transação é final e não há nenhum reembolso. Se você for banido por infringir as regras dos servidores BMR, você não será reembolsado. As proibições estão sujeitas à total discrição dos</p><p>administradores do servidor e as regras podem ser alteradas a qualquer momento. Não há garantia</p><p>de ser capaz de entrar no servidor;</p><p>&nbsp;</p><p>XVIII - Você concorda e está ciente que qualquer tipo de comércio interno e/ externo é proibido dentro do servidor;</p><p>&nbsp;</p><p>XIX - Você concorda que os produtos são exclusivos de cujo primário, não podendo repassar para terceiros.</p><p>&nbsp;</p><p>XX - PRAZO DE ENTREGA DO PRODUTO</p><p>Fique atento ao prazo de entrega, eles são variáveis conforme o método de pagamento;</p><p>Seu beneficio é ativado em até 24 horas após o pagamento;<br><br>Mods são ativos em até 72 horas uteis.</p><p>Em média, levamos menos de 01 hora após nos contatar.</p><p>&nbsp;</p><p>SAC E ATENDIMENTO</p><p>WHATSAPP<span style="color: rgb(175, 179, 193)">: </span><strong><em>+ 55 82 99689-2673</em></strong></p>      </div>
+      </div>
+
+  <div class="flex p-6">
+    <button class="ms-auto h-10 px-4 flex items-center justify-center rounded bg-brand 
+      hover:bg-brand/80 transition text-white font-medium tracking-wider" onclick="closeModal()">
+      Fechar
+    </button>
+  </div>
+</div>
+
+<script type="text/javascript">
+  const dist_url = ''
+  const store_type = 'FIVEM'
+</script>
+<script src="js/CentralCart.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/store.js"></script>
+<script src="js/drawer.js"></script>
+</body></html>
